@@ -4,9 +4,9 @@ Resources:
     Properties:
       VpcId:
         Ref: ServerlessVPC
-    Tags:
-      - Key: Name
-        Value: DefaultPublicRouteTable
+      Tags:
+        - Key: Name
+          Value: DefaultPublicRouteTable
   DefaultPublicRoute:
     Type: AWS::EC2::Route
     Properties:
