@@ -6,7 +6,7 @@ Resources:
         Fn::GetAtt:
          - ElasticIpLambda
          - AllocationId
-      subnetId:
+      SubnetId:
         Ref: ServerlessPublicSubnet1
   ServerlessPublicSubnet1: 
     DependsOn: 
