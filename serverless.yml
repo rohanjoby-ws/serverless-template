@@ -15,7 +15,8 @@ provider:
   vpc:
     securityGroupIds:
       - Fn::GetAtt:
-          - ServerlessSecurityGroup.GroupId
+          - ServerlessSecurityGroup
+          - GroupId
     subnetIds:
       Ref: ServerlessPrivateSubnet1
 package:
