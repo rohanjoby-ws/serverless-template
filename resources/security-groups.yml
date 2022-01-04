@@ -1,0 +1,12 @@
+Resources:
+  ServerlessSecurityGroup:
+    DependsOn:
+      - ServerlessVPC
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: SecurityGroup for Serverless Functions
+      VpcId:
+        Ref: ServerlessVPC
+      Tags:
+        - Key: 'Name'
+          Value: 'sls-tutorial-sg'
