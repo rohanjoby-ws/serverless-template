@@ -3,5 +3,5 @@ Resources:
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
-        - Key: 'Name'
-          Value: 'ServerlessInternetGateway'
+        - Key: Name
+          Value: ServerlessInternetGateway
