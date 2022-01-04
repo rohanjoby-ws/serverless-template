@@ -1,8 +1,8 @@
 Resources:
   TestRoleForSLSNATGateway:
     Type: AWS::IAM::Role
-    Description: This is an example role for SLS NAT Gateway
     Properties:
+      Description: This is an example role for SLS NAT Gateway
       RoleName: ${self:service.name}-nat-gateway-role
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
