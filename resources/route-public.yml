@@ -13,7 +13,8 @@ Resources:
       RouteTableId:
         Ref: DefaultPublicRouteTable
       DestinationCidrBlock: 0.0.0.0/0
-      GatewayId: ServerlessInternetGateway
+      GatewayId: 
+        Ref: SlsTutorialIGW
   IGWRouteTableLambdaAssociation:
     Type: AWS::EC2::SubnetRouteTableAssociation
     Properties:
