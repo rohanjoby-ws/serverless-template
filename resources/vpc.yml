@@ -12,4 +12,4 @@ Resources:
       VpcId:
         Ref: ServerlessVPC
       InternetGatewayId:
-        Ref: ServerlessInternetGateway
+        Ref: SlsTutorialIGW

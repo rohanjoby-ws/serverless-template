@@ -1,7 +1,7 @@
 Resources:
-  ServerlessInternetGateway:
+  SlsTutorialIGW:
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
         - Key: Name
-          Value: ServerlessInternetGateway
+          Value: SlsTutorialIGW
