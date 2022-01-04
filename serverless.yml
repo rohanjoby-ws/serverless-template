@@ -18,7 +18,7 @@ provider:
           - ServerlessSecurityGroup
           - GroupId
     subnetIds:
-      Ref: ServerlessPrivateSubnet1
+      - Ref: ServerlessPrivateSubnet1
 package:
   individually: true
 custom:
