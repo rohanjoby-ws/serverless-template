@@ -1,4 +1,4 @@
-name: SLS NAT GATEWAY CD (main)
+name: serverless-template-cd
 
 on:
   push:
