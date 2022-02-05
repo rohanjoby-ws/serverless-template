@@ -12,13 +12,6 @@ provider:
   stage: ${env:STAGE}
   region: ${env:REGION}
   versionFunctions: false
-  vpc:
-    securityGroupIds:
-      - Fn::GetAtt:
-          - ServerlessSecurityGroup
-          - GroupId
-    subnetIds:
-      - Ref: ServerlessPrivateSubnet1
 package:
   individually: true
 custom:
@@ -26,13 +19,6 @@ custom:
   webpack:
     includeModules: true
     excludeFiles: ./**/*.test.js
-functions: ${file(./resources/functions.yml)}
+functions: ${file(./resources/lambda/functions.yml)}
 resources:
-  - ${file(./resources/iam.yml)}
-  - ${file(./resources/vpc.yml)}
-  - ${file(./resources/security-groups.yml)}
-  - ${file(./resources/internet-gateway.yml)}
-  - ${file(./resources/elastic-ip.yml)}
-  - ${file(./resources/nat-gateway.yml)}
-  - ${file(./resources/route-private.yml)}
-  - ${file(./resources/route-public.yml)}
+  - ${file(./resources/config/iam.yml)}

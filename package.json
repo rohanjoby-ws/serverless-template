@@ -1,7 +1,7 @@
 {
-	"name": "sls-nat-gateway-tutorial",
+	"name": "serverless-template",
 	"version": "1.0.0",
-	"description": "An serverless nat-gateway internet gateway integration for elastic ip of vpc resources",
+	"description": "A serverless template ",
 	"main": "index.js",
 	"scripts": {
 		"format": "prettier-standard './**/**/*.js'",
