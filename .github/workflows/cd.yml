@@ -1,9 +1,9 @@
-name: SLS NAT GATEWAY CD (dev)
+name: SLS NAT GATEWAY CD (main)
 
 on:
   push:
     branches:
-      - dev
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
