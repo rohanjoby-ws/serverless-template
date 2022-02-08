@@ -39,7 +39,7 @@ describe('github-post-function tests', () => {
 
 		expect(callBackSpy).toBeCalledWith(null, {
 			body: JSON.stringify({
-				userData: MOCK_RESPONSE,
+				data: MOCK_RESPONSE,
 			}),
 		});
 	});
