@@ -6,4 +6,11 @@ githubPostFunction:
         method: POST
         path: /get-user
         cors: true
-  
+
+memeMakerGetFunction:
+    handler: functions/meme-get-function/index.handler
+    role: ServerlessTemplateRole
+    events:
+      - http:
+          method: GET
+          path: /get-meme
