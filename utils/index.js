@@ -1,5 +1,5 @@
 export const apiFailure = (callback, error, statusCode = 500) => {
-	console.log('error', error);
+	// console.log('error', error);
 	const errMessage = error.message || 'Something went wrong!';
 	return callback(null, {
 		statusCode,
@@ -10,7 +10,8 @@ export const apiFailure = (callback, error, statusCode = 500) => {
 	});
 };
 
-export const apiSuccess = (callback, data) => {
-	console.log('success', JSON.stringify(data));
-	return callback(null, { body: JSON.stringify({ data }) });
-};
+export const apiSuccess = (callback, data) =>
+	//	console.log('success', JSON.stringify(data));
+	callback(null, { body: JSON.stringify({ userData: data }) });
+
+// OpenWeather API

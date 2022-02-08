@@ -1,9 +1,9 @@
-starterFunction:
-  handler: functions/starter-function/index.handler
+githubPostFunction:
+  handler: functions/github-post-function/index.handler
   role: ServerlessTemplateRole
   events:
     - http:
-        method: GET
-        path: /get-repos
+        method: POST
+        path: /get-user
         cors: true
   
