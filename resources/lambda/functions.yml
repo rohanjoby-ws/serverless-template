@@ -5,7 +5,6 @@ githubPostFunction:
     - http:
         method: POST
         path: /get-user
-        cors: true
 
 memeMakerGetFunction:
     handler: functions/meme-get-function/index.handler
