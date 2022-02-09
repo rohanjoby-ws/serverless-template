@@ -5,6 +5,7 @@ githubPostFunction:
     - http:
         method: POST
         path: /get-user
+        private: true
 
 memeMakerGetFunction:
     handler: functions/meme-get-function/index.handler
@@ -13,3 +14,4 @@ memeMakerGetFunction:
       - http:
           method: GET
           path: /get-meme
+          private: true
