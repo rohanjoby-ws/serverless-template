@@ -8,7 +8,7 @@ describe('github-post-function tests', () => {
 	let mockGetMemes = jest.fn();
 	const callBackSpy = jest.fn();
 	const contextSpy = jest.fn();
-	const MOCK_RESPONSE = { memeData: 'response data' };
+	const MOCK_RESPONSE = { data: 'response data' };
 
 	beforeEach(() => {
 		apiSuccessSpy = jest.spyOn(utils, 'apiSuccess');

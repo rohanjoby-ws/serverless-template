@@ -8,7 +8,7 @@ describe('github-post-function tests', () => {
 	let mockGetUserData = jest.fn();
 	const callBackSpy = jest.fn();
 	const contextSpy = jest.fn();
-	const MOCK_RESPONSE = { userData: 'response data' };
+	const MOCK_RESPONSE = { data: 'response data' };
 
 	beforeEach(() => {
 		apiSuccessSpy = jest.spyOn(utils, 'apiSuccess');
@@ -45,7 +45,7 @@ describe('github-post-function tests', () => {
 	});
 
 	it('should handle failure scenario correctly', async () => {
-		const error = { message: 'some error', code: 404 };
+		const error = { errMessage: 'some error', errorCode: 404 };
 		mockGetUserData.mockRejectedValueOnce(error);
 
 		await handler(event, contextSpy, callBackSpy);
