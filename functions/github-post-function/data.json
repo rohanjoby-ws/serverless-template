@@ -1,0 +1,67 @@
+{
+	"event": {
+		"body": "{\n    \"user\": \"rohanjoby-ws\"\n}",
+		"headers": {
+			"Content-Type": "application/json",
+			"User-Agent": "PostmanRuntime/7.29.0",
+			"Accept": "*/*",
+			"Postman-Token": "2727b8bf-5543-4f6a-b65f-92497b7766bc",
+			"Host": "localhost:3000",
+			"Accept-Encoding": "gzip, deflate, br",
+			"Connection": "keep-alive",
+			"Content-Length": "29"
+		},
+		"httpMethod": "POST",
+		"isBase64Encoded": false,
+		"multiValueHeaders": {
+			"Content-Type": ["application/json"],
+			"User-Agent": ["PostmanRuntime/7.29.0"],
+			"Accept": ["*/*"],
+			"Postman-Token": ["2727b8bf-5543-4f6a-b65f-92497b7766bc"],
+			"Host": ["localhost:3000"],
+			"Accept-Encoding": ["gzip, deflate, br"],
+			"Connection": ["keep-alive"],
+			"Content-Length": ["29"]
+		},
+		"multiValueQueryStringParameters": null,
+		"path": "/get-user",
+		"pathParameters": null,
+		"queryStringParameters": null,
+		"requestContext": {
+			"accountId": "offlineContext_accountId",
+			"apiId": "offlineContext_apiId",
+			"authorizer": {
+				"principalId": "offlineContext_authorizer_principalId"
+			},
+			"domainName": "offlineContext_domainName",
+			"domainPrefix": "offlineContext_domainPrefix",
+			"extendedRequestId": "ckzdzj10v0009khs13mofbwjy",
+			"httpMethod": "POST",
+			"identity": {
+				"accessKey": null,
+				"accountId": "offlineContext_accountId",
+				"apiKey": "offlineContext_apiKey",
+				"apiKeyId": "offlineContext_apiKeyId",
+				"caller": "offlineContext_caller",
+				"cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+				"cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+				"cognitoIdentityId": "offlineContext_cognitoIdentityId",
+				"cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+				"principalOrgId": null,
+				"sourceIp": "127.0.0.1",
+				"user": "offlineContext_user",
+				"userAgent": "PostmanRuntime/7.29.0",
+				"userArn": "offlineContext_userArn"
+			},
+			"path": "/get-user",
+			"protocol": "HTTP/1.1",
+			"requestId": "ckzdzj10w000akhs1b80ofe04",
+			"requestTime": "08/Feb/2022:16:03:18 +0530",
+			"requestTimeEpoch": 1644316398314,
+			"resourceId": "offlineContext_resourceId",
+			"resourcePath": "/local/get-user",
+			"stage": "local"
+		},
+		"resource": "/get-user"
+	}
+}

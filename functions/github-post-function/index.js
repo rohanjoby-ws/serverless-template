@@ -1,10 +1,11 @@
 import { apiSuccess, apiFailure } from '@utils';
-import { getOrganizations } from '@services/github';
+import { getUser } from '@services/github';
 
 exports.handler = async (event, _context, callback) => {
-	console.log(JSON.stringify(event));
+	console.log({ event: JSON.stringify(event) });
+	const requestBody = JSON.parse(event.body);
 	try {
-		const response = await getOrganizations();
+		const response = await getUser(requestBody.user);
 		return apiSuccess(callback, response);
 	} catch (error) {
 		console.error(error);

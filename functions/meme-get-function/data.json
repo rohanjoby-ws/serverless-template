@@ -1,0 +1,67 @@
+{
+	"event": {
+		"body": null,
+		"headers": {
+			"Content-Type": "application/json",
+			"User-Agent": "PostmanRuntime/7.29.0",
+			"Accept": "*/*",
+			"Postman-Token": "42ef497d-4534-4e9f-ba77-c253e3b85d75",
+			"Host": "localhost:3000",
+			"Accept-Encoding": "gzip, deflate, br",
+			"Connection": "keep-alive",
+			"Content-Length": "29"
+		},
+		"httpMethod": "GET",
+		"isBase64Encoded": false,
+		"multiValueHeaders": {
+			"Content-Type": ["application/json"],
+			"User-Agent": ["PostmanRuntime/7.29.0"],
+			"Accept": ["*/*"],
+			"Postman-Token": ["42ef497d-4534-4e9f-ba77-c253e3b85d75"],
+			"Host": ["localhost:3000"],
+			"Accept-Encoding": ["gzip, deflate, br"],
+			"Connection": ["keep-alive"],
+			"Content-Length": ["29"]
+		},
+		"multiValueQueryStringParameters": null,
+		"path": "/get-meme",
+		"pathParameters": null,
+		"queryStringParameters": null,
+		"requestContext": {
+			"accountId": "offlineContext_accountId",
+			"apiId": "offlineContext_apiId",
+			"authorizer": {
+				"principalId": "offlineContext_authorizer_principalId"
+			},
+			"domainName": "offlineContext_domainName",
+			"domainPrefix": "offlineContext_domainPrefix",
+			"extendedRequestId": "ckze3mgte00032qs10p2s4bsd",
+			"httpMethod": "GET",
+			"identity": {
+				"accessKey": null,
+				"accountId": "offlineContext_accountId",
+				"apiKey": "offlineContext_apiKey",
+				"apiKeyId": "offlineContext_apiKeyId",
+				"caller": "offlineContext_caller",
+				"cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+				"cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+				"cognitoIdentityId": "offlineContext_cognitoIdentityId",
+				"cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+				"principalOrgId": null,
+				"sourceIp": "127.0.0.1",
+				"user": "offlineContext_user",
+				"userAgent": "PostmanRuntime/7.29.0",
+				"userArn": "offlineContext_userArn"
+			},
+			"path": "/get-meme",
+			"protocol": "HTTP/1.1",
+			"requestId": "ckze3mgth00042qs15rxs1vzb",
+			"requestTime": "08/Feb/2022:17:57:57 +0530",
+			"requestTimeEpoch": 1644323277217,
+			"resourceId": "offlineContext_resourceId",
+			"resourcePath": "/local/get-meme",
+			"stage": "local"
+		},
+		"resource": "/get-meme"
+	}
+}
