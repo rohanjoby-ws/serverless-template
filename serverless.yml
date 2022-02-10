@@ -12,6 +12,14 @@ provider:
   stage: ${env:STAGE}
   region: ${env:REGION}
   versionFunctions: false
+  vpc:
+    securityGroupIds:
+      - Fn::GetAtt:
+          - ServerlessSecurityGroup
+          - GroupId
+    subnetIds:
+      - Ref: ServerlessPublicSubnet1
+      - Ref: ServerlessPublicSubnet2
   apiGateway:
     apiKeys:
       - rj-serverless-${env:STAGE}-api-key
@@ -35,3 +43,9 @@ custom:
 functions: ${file(./resources/lambda/functions.yml)}
 resources:
   - ${file(./resources/config/iam.yml)}
+  - ${file(./resources/config/vpc.yml)}
+  - ${file(./resources/config/security-groups.yml)}
+  - ${file(./resources/config/internet-gateway.yml)}
+  - ${file(./resources/config/gateway.yml)}
+  - ${file(./resources/config/route-public-1.yml)}
+  - ${file(./resources/config/route-public-2.yml)}
