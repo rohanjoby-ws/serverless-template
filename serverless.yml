@@ -14,7 +14,7 @@ provider:
   versionFunctions: false
   apiGateway:
     apiKeys:
-      - rj-serverless-{opt:stage,'dev'}-api-key
+      - rj-serverless-${env:STAGE}-api-key
     usagePlan:
       quota:
         limit: 1000000
