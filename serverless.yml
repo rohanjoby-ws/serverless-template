@@ -12,9 +12,22 @@ provider:
   stage: ${env:STAGE}
   region: ${env:REGION}
   versionFunctions: false
+  apiGateway:
+    apiKeys:
+      - rj-serverless-{opt:stage,'dev'}-api-key
+    usagePlan:
+      quota:
+        limit: 1000000
+        offset: 1
+        period: MONTH
+      throttle:
+        burstLimit: 1000
+        rateLimit: 1000
 package:
   individually: true
 custom:
+  serverless-offline:
+    apiKey: 'rj-local-key-1'
   urlPrefix: 'sls'
   webpack:
     includeModules: true
