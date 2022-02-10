@@ -35,11 +35,11 @@ describe('github-post-function tests', () => {
 
 		// request and success calls
 		expect(apiSuccessSpy).toHaveBeenCalledTimes(1);
-		expect(apiSuccessSpy).toHaveBeenCalledWith(callBackSpy, MOCK_RESPONSE);
+		expect(apiSuccessSpy).toHaveBeenCalledWith(callBackSpy, MOCK_RESPONSE.data);
 
 		expect(callBackSpy).toBeCalledWith(null, {
 			body: JSON.stringify({
-				data: MOCK_RESPONSE,
+				data: MOCK_RESPONSE.data,
 			}),
 		});
 	});
