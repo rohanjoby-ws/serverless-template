@@ -5,7 +5,7 @@ exports.handler = async (event, _context, callback) => {
 	console.log({ event: JSON.stringify(event) });
 	try {
 		const response = await getMemes();
-		return apiSuccess(callback, response);
+		return apiSuccess(callback, response.data);
 	} catch (error) {
 		console.error(error);
 		return apiFailure(callback, error);
